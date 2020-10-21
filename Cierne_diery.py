@@ -26,7 +26,7 @@ all = [x for x in set(filter(lambda x: 'product' in x,[x.get('href') for x in so
 new = [x for x in filter(lambda x: x not in cache, all)]
 cache += new
 grafiky = 'Tieto su nove: \n'
-for x in new-all:
+for x in new:
     grafiky += x + '\n'
 
 print(grafiky)
