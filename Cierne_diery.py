@@ -10,7 +10,7 @@ import os
 from bs4 import BeautifulSoup as bs
 #print ("done importing")
 cache = []
-
+time.sleep(randint(1,30))
 if os.path.isfile('./cachefile.json'):
     with open('./cachefile.json') as fh:
         try:
