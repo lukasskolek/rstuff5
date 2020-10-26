@@ -31,23 +31,24 @@ for x in new:
 
 print(grafiky)
 
-#with open('./cachefile.json','w') as fh:
-#    json.dump(cache,fh)
+with open('./cachefile.json','w') as fh:
+    json.dump(cache,fh)
 
-#if new:
-#    msg = EmailMessage()
-#    msg.set_content(grafiky)
-#    msg['From'] = 'diery2020cierne@gmail.com'
-#    msg['To'] = 'luky.skolek@gmail.com'
-#    msg['Subject'] = 'Cierne diery dali nove grafiku ty jebko!'
-#    fromaddr = 'diery2020cierne@gmail.com'
-#    toaddrs = ['luky.skolek@gmail.com','filip.alexander.uhlarik@gmail.com']
-#    server = smtplib.SMTP('smtp.gmail.com', 587)
-#    server.starttls()
-#    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-#    server.login('diery2020cierne@gmail.com', '3P6ciaUaLJiraKk')
-#    server.send_message(msg)
-#    server.quit()
-#    response = urlopen(url).read()
-#else:
-#    print('All has been seen')
+if new:
+    msg = EmailMessage()
+    msg.set_content(grafiky)
+    msg['From'] = 'diery2020cierne@gmail.com'
+    msg['To'] = 'luky.skolek@gmail.com'
+    msg['To'] = 'filip.alexander.uhlarik@gmail.com'
+    msg['Subject'] = 'Cierne diery dali nove grafiku ty jebko!'
+    fromaddr = 'diery2020cierne@gmail.com'
+    toaddrs = ['luky.skolek@gmail.com','filip.alexander.uhlarik@gmail.com']
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    server.login('diery2020cierne@gmail.com', '3P6ciaUaLJiraKk')
+    server.send_message(msg)
+    server.quit()
+    response = urlopen(url).read()
+else:
+    print('All has been seen')
