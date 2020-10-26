@@ -29,8 +29,6 @@ grafiky = 'Tieto su nove: \n'
 for x in new:
     grafiky += x + '\n'
 
-print(grafiky)
-
 with open('./cachefile.json','w') as fh:
     json.dump(cache,fh)
 
