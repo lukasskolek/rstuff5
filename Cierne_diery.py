@@ -37,10 +37,9 @@ if new:
     msg.set_content(grafiky)
     msg['From'] = 'diery2020cierne@gmail.com'
     msg['To'] = 'luky.skolek@gmail.com'
-    msg['To'] = 'filip.alexander.uhlarik@gmail.com'
     msg['Subject'] = 'Cierne diery dali nove grafiku ty jebko!'
     fromaddr = 'diery2020cierne@gmail.com'
-    toaddrs = ['luky.skolek@gmail.com','filip.alexander.uhlarik@gmail.com']
+    toaddrs = ['luky.skolek@gmail.com']
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
