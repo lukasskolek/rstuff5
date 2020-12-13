@@ -36,7 +36,7 @@ if new:
     msg = EmailMessage()
     msg.set_content(grafiky)
     msg['From'] = 'diery2020cierne@gmail.com'
-    msg['Subject'] = 'Cierne diery dali nove grafiku ty jebko!'
+    msg['Subject'] = 'CIERNE DIERY Whoop Whoop dali nove grafiky tak kupujeme!'
     fromaddr = 'diery2020cierne@gmail.com'
     toaddrs = 'luky.skolek@gmail.com', 'filip.alexander.uhlarik@gmail.com', 'kristina.lappyova@gmail.com'
     msg['To'] = ", ".join(toaddrs)
