@@ -38,7 +38,7 @@ if new:
     msg['From'] = 'diery2020cierne@gmail.com'
     msg['Subject'] = 'CIERNE DIERY Whoop Whoop dali nove grafiky tak kupujeme!'
     fromaddr = 'diery2020cierne@gmail.com'
-    toaddrs = 'luky.skolek@gmail.com', 'jurasluky@gmail.com', 'filip.alexander.uhlarik@gmail.com', 'kristina.lappyova@gmail.com'
+    toaddrs = 'luky.skolek@gmail.com', 'jurasluky@gmail.com', 'filip.alexander.uhlarik@gmail.com', 'kristina.lappyova@gmail.com', 'alz.tibenska@gmail.com'
     msg['To'] = ", ".join(toaddrs)
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
